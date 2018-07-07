@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .container{
+      /* float: left; 
+      overflow: hidden;*/
+      background-color: #cccccc;
+    }
+    h1,p{
+       float: left; 
+    }
+    p{
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+    /* 添加一个看不见的块元素 */
+    .clearfix:after{
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+    }
+/* IE6 IE7触发layout */
+    .clearfix{
+     zoom: 1;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+      <h1>testtest</h1>
+      <p>J2EE
+          1.Druid
+          2.Dubbo
+          https://github.com/alibaba/dubbo/tree/master
+          3.APache RocketMwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwQ
+          4.fastjson</p>
+          <p>J2EE
+              1.Druid
+              2.Dubbo
+              https://github.com/alibaba/dubbo/tree/master
+              3.APache Rockxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+              xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxetMQ
+              4.fastjson</p>
+
+          <!-- <div style="clear: both;"></div> -->
+  </div>
+ 
+</body>
+</html>
